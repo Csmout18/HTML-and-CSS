@@ -1,0 +1,93 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightgray;
+    margin: 10px;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+p {
+    color: purple;
+    font-size: 18px;
+}
+
+div>p {
+    color: black;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: green;
+    text-decoration: solid;
+}
+
+.content {
+    background-color: lightcyan;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-style: dotted;
+    border-radius: 5px;
+    max-width: 700px;
+}
+
+input, textarea, button {
+    width: 99%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: blue;
+    box-shadow: 0 0 8px gray;
+  }
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  button:hover {
+    background-color: lightblue;
+  }
+
+  button:active {
+    background-color: green;
+    transform: scale(0.98);
+  }

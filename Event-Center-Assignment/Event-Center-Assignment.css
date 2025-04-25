@@ -1,0 +1,316 @@
+/* START OF NAVBAR STYLING */
+:root {
+  --main-color: #333;
+  --secondary-color: ;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Navbar Hover */
+#homelink:hover {
+  color: red;
+}
+
+#eventlink:hover {
+  color: orange;
+}
+
+#menulink:hover {
+  color: yellow;
+}
+
+#locationlink:hover {
+  color: green;
+}
+
+#contactlink:hover {
+  color: blue;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+  }
+
+  /* Display the hamburger icon */
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked + label + ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* END OF NAVBAR STYLING */
+
+/* HOME PAGE STYLING*/
+body {
+  background-color: rgb(86, 156, 167);
+}
+
+.banner{
+  padding: 200px;
+  background-image: url(https://media.istockphoto.com/id/1411414490/photo/diverse-blue-pro-gamer-team-with-female-players-competing-at-video-game-esport-championship.webp?a=1&b=1&s=612x612&w=0&k=20&c=S4xPyljEC0CsJy0ROptMTTL2uyX6WQncEnQSfWCJkjs=);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcome {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(87, 167, 33, 0.574);
+  color: white;
+  border-radius: 25px;
+}
+
+.aboutus {
+  color: white;
+  text-align: center;
+  background-color: var(--main-color);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-style: groove;
+  border-width: 5px;
+  border-color: black;
+}
+
+#aboutuseventlink {
+  color: green;
+}
+
+/* END OF HOME PAGE STYLING */
+
+/* START OF EVENT PAGE STYLING */
+
+.event-flexbox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.events {
+  margin-top: 20px;
+  padding: 40px 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* Individual Event Styling */
+
+.event {
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  border: black 1px solid;
+  max-width: 300px;
+  background-color: lightgray;
+}
+
+/* Individual Event Image Styling */
+
+.event img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* END OF EVENT PAGE STYLING */
+
+/* START OF CONTACT PAGE STYLING */
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: rgb(41, 98, 41);
+  border-radius: 25px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: rgb(41, 98, 41);
+  padding: 20px;
+  color: white;
+}
+
+.textarea {
+  resize: none;
+}
+
+.resetbutton, .button {
+  border-radius: 12px;
+  border-width: 6px;
+  border-color: lightgray;
+}
+
+.resetbutton:hover {
+  background-color: rgb(199, 59, 59);
+  border-color: rgb(199, 59, 59);
+}
+
+.button:hover {
+  background-color: rgb(46, 157, 46);
+  border-color: rgb(46, 157, 46);
+}
+
+/* END CONTACT PAGE STYLING */
+
+/* START OF MENU PAGE STYLING */
+
+.menubody {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: beige;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f0f0f0;
+  color: #444;
+}
+
+img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    text-align: right;
+  }
+
+  img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+/* END OF MENU PAGE STYLING */
+
+/* START OF LOCATION PAGE STYLING */
+
+.map-container {
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border: 2px solid black;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .map-container {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border: 2px solid black;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+}
+
+
+
+/* END OF LOCATION PAGE STYLING */
+
+/* FOOTER */
+
+footer {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
